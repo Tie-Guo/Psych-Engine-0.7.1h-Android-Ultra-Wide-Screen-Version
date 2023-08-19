@@ -89,6 +89,9 @@ class FreeplayState extends MusicBeatState
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
+		bg.scale.x = 1.25;
+		bg.scale.y = 1.25;
+		bg.updateHitbox();
 		add(bg);
 		bg.screenCenter();
 
@@ -546,7 +549,7 @@ class FreeplayState extends MusicBeatState
 		{
 			var item:Alphabet = grpSongs.members[i];
 			item.visible = item.active = true;
-			item.x = ((item.targetY - lerpSelected) * item.distancePerItem.x) + item.startPosition.x;
+			item.x = ((item.targetY - lerpSelected) * item.distancePerItem.x) + item.startPosition.x + 75;
 			item.y = ((item.targetY - lerpSelected) * 1.3 * item.distancePerItem.y) + item.startPosition.y;
 
 			var icon:HealthIcon = iconArray[i];
