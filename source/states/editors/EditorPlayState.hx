@@ -457,7 +457,7 @@ class EditorPlayState extends MusicBeatSubstate
 					babyArrow.x += 310;
 					if(i > 1) { //Up and Right
 						babyArrow.x += FlxG.width / 2 + 100;
-					} else if i <= 1 {
+					} else if (i <= 1) {
 						babyArrow.x += FlxG.width / 2 + 50;
 					}
 				} else {
