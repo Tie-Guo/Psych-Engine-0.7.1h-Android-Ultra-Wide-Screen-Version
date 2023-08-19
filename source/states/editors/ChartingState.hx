@@ -326,7 +326,7 @@ class ChartingState extends MusicBeatState
 
 		UI_box.resize(300, 400);
 		UI_box.x = 640 + GRID_SIZE / 2;
-		UI_box.y = 25;
+		UI_box.y = 325;
 		UI_box.scrollFactor.set();
 
 		text =

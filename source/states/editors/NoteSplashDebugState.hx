@@ -47,7 +47,7 @@ class NoteSplashDebugState extends MusicBeatState
 
 		for (i in 0...maxNotes)
 		{
-			var x = i * 220 + 240;
+			var x = i * 220 + 440;
 			var y = 290;
 			var note:StrumNote = new StrumNote(x, y, i, 0);
 			note.alpha = 0.75;
@@ -95,17 +95,17 @@ class NoteSplashDebugState extends MusicBeatState
 		add(stepperMaxFps);
 
 		//
-		offsetsText = new FlxText(300, 150, 680, '', 16);
+		offsetsText = new FlxText(600, 150, 680, '', 16);
 		offsetsText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		offsetsText.scrollFactor.set();
 		add(offsetsText);
 
-		curFrameText = new FlxText(300, 100, 680, '', 16);
+		curFrameText = new FlxText(600, 100, 680, '', 16);
 		curFrameText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		curFrameText.scrollFactor.set();
 		add(curFrameText);
 
-		curAnimText = new FlxText(300, 50, 680, '', 16);
+		curAnimText = new FlxText(600, 50, 680, '', 16);
 		curAnimText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		curAnimText.scrollFactor.set();
 		add(curAnimText);

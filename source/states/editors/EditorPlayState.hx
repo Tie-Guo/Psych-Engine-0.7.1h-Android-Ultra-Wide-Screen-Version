@@ -94,6 +94,9 @@ class EditorPlayState extends MusicBeatSubstate
 		bg.scrollFactor.set();
 		bg.color = 0xFF101010;
 		bg.alpha = 0.9;
+		bg.scale.x = 1.25;
+		bg.scale.y = 1.25;
+		bg.updateHitbox();
 		add(bg);
 		
 		/**** NOTES ****/
@@ -442,16 +445,22 @@ class EditorPlayState extends MusicBeatSubstate
 			babyArrow.downScroll = ClientPrefs.data.downScroll;
 			babyArrow.alpha = targetAlpha;
 
+			
 			if (player == 1)
 				playerStrums.add(babyArrow);
+				babyArrow.x += 75;
 			else
 			{
 				if(ClientPrefs.data.middleScroll)
 				{
 					babyArrow.x += 310;
 					if(i > 1) { //Up and Right
-						babyArrow.x += FlxG.width / 2 + 25;
+						babyArrow.x += FlxG.width / 2 + 100;
+					} else if i <= 1 {
+						babyArrow.x += FlxG.width / 2 + 50;
 					}
+				} else {
+					babyArrow.x += 130;
 				}
 				opponentStrums.add(babyArrow);
 			}
