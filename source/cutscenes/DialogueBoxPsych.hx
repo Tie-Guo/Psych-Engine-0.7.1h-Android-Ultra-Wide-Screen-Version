@@ -103,8 +103,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var dialogueStarted:Bool = false;
 	var dialogueEnded:Bool = false;
 
-	public static var LEFT_CHAR_X:Float = -60;
-	public static var RIGHT_CHAR_X:Float = -100;
+	public static var LEFT_CHAR_X:Float = 20;
+	public static var RIGHT_CHAR_X:Float = -350;
 	public static var DEFAULT_CHAR_Y:Float = 60;
 
 	function spawnCharacters() {
