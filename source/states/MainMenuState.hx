@@ -79,7 +79,7 @@ class MainMenuState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.data.antialiasing;
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
-		magenta.scale.x = 1.25
+		magenta.scale.x = 1.25;
 		magenta.scale.y = 1.25;
 		magenta.updateHitbox();
 		magenta.screenCenter();
