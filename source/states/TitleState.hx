@@ -86,9 +86,9 @@ class TitleState extends MusicBeatState
 		//https://github.com/beihu235/AndroidDialogs
 		var lang:String = '';
 		if (DeviceLanguage.getLang() == 'zh') 
-		lang = 'psych0.71h 安卓端口测试\nb站-北狐丶逐梦移植\n禁止上传到任何资源网站';
+		lang = 'b站-北狐丶逐梦移植\nTG铁锅炖大鹅全面屏版本\n禁止上传到任何资源网站';
 		else
-		lang = 'psych0.71h android port test\nport by NF|beihu';
+		lang = 'psych0.71h android port test\nultra-wide screen version by TieGuo\nport by NF|beihu';
 		if(!checkToast){
 				
 		checkToast = true;
@@ -238,7 +238,7 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);
 
-		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
+		logoBl = new FlxSprite(titleJSON.titlex+328, titleJSON.titley);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
 		logoBl.antialiasing = ClientPrefs.data.antialiasing;
 
@@ -249,7 +249,7 @@ class TitleState extends MusicBeatState
 		// logoBl.color = FlxColor.BLACK;
 
 		if(ClientPrefs.data.shaders) swagShader = new ColorSwap();
-		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
+		gfDance = new FlxSprite(titleJSON.gfx+328, titleJSON.gfy);
 		gfDance.antialiasing = ClientPrefs.data.antialiasing;
 
 		var easterEgg:String = FlxG.save.data.psychDevsEasterEgg;
@@ -294,7 +294,7 @@ class TitleState extends MusicBeatState
 			logoBl.shader = swagShader.shader;
 		}
 
-		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
+		titleText = new FlxSprite(titleJSON.startx +385, titleJSON.starty);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');
 		var animFrames:Array<FlxFrame> = [];
 		@:privateAccess {
