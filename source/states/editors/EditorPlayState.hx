@@ -446,9 +446,10 @@ class EditorPlayState extends MusicBeatSubstate
 			babyArrow.alpha = targetAlpha;
 
 			
-			if (player == 1)
+			if (player == 1) {
 				playerStrums.add(babyArrow);
 				babyArrow.x += 75;
+			}
 			else
 			{
 				if(ClientPrefs.data.middleScroll)
