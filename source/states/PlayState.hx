@@ -1484,6 +1484,8 @@ class PlayState extends MusicBeatState
 			if (player == 1) {
 				playerStrums.add(babyArrow);
 				babyArrow.x += 75;
+				if(ClientPrefs.data.middleScroll)
+					babyArrow.x -= 50;
 			}
 			else
 			{

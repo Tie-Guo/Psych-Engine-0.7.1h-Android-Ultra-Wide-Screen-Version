@@ -93,7 +93,7 @@ class ModsMenuState extends MusicBeatState
 		visibleWhenHasMods.push(selector);
 
 		//attached buttons
-		var startX:Int = 1120;
+		var startX:Int = 1262;
 
 		buttonToggle = new FlxButton(startX, 0, "ON", function()
 		{
