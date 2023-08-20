@@ -509,7 +509,7 @@ class ModsMenuState extends MusicBeatState
 	var cornerSize:Int = 11;
 	function makeSelectorGraphic()
 	{
-		selector.makeGraphic(1100, 450, FlxColor.BLACK);
+		selector.makeGraphic(1400, 450, FlxColor.BLACK);
 		selector.pixels.fillRect(new Rectangle(0, 190, selector.width, 5), 0x0);
 
 		// Why did i do this? Because i'm a lmao stupid, of course
