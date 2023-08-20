@@ -80,6 +80,16 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		option.decimals = 1;
 		addOption(option);
+		
+		var option:Option = new Option('Smaller Camera',
+			'In PlayState camera will be smaller.',
+			'smallercamera',
+			'float');
+		option.scrollSpeed = 5;
+		option.minValue = -0.5;
+		option.maxValue = 1.5;
+		option.changeValue = 0.1;
+		addOption(option);
 
 		var option:Option = new Option('Hide HUD',
 			'If checked, hides most HUD elements.',
