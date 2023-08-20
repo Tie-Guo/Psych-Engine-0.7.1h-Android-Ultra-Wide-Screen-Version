@@ -51,6 +51,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		descBox = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
 		descBox.alpha = 0.6;
 		add(descBox);
+		descBox.x += 142;
 
 		var titleText:Alphabet = new Alphabet(75, 45, title, true);
 		titleText.setScale(0.6);
@@ -62,6 +63,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		descText.scrollFactor.set();
 		descText.borderSize = 2.4;
 		add(descText);
+		descText.x += 142;
 
 		for (i in 0...optionsArray.length)
 		{
@@ -275,7 +277,6 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		descText.text = optionsArray[curSelected].description;
 		descText.screenCenter(Y);
 		descText.y += 270;
-		descText.x += 175;
 
 		var bullShit:Int = 0;
 
@@ -298,7 +299,6 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		descBox.setPosition(descText.x - 10, descText.y - 10);
 		descBox.setGraphicSize(Std.int(descText.width + 20), Std.int(descText.height + 25));
 		descBox.updateHitbox();
-		descBox.x += 175;
 
 		curOption = optionsArray[curSelected]; //shorter lol
 		FlxG.sound.play(Paths.sound('scrollMenu'));
