@@ -54,6 +54,7 @@ class SaveVariables {
 	public var hitboxLocation:String = 'Bottom';
 	public var hitboxalpha:Float = 0.2; //someone request this lol
 	public var VirtualPadAlpha:Float = 0.75;
+	public var smallercamera:Float = 0;
 	
 	public var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
