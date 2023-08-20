@@ -42,6 +42,9 @@ class AndroidControlsMenu extends MusicBeatState
 
 		var bg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('menuDesat'));
 		bg.color = 0xFFea71fd;
+		bg.scale.x = 1.25;
+		bg.scale.y = 1.25;
+		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
