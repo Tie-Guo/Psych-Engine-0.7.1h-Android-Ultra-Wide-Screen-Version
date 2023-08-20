@@ -267,7 +267,7 @@ class PlayState extends MusicBeatState
 	public var startCallback:Void->Void = null;
 	public var endCallback:Void->Void = null;
 	
-	public var smallercameraInt:Float = 0;
+	public static var smallercameraInt:Float = 0;
 
 	override public function create()
 	{
@@ -301,8 +301,7 @@ class PlayState extends MusicBeatState
 		practiceMode = ClientPrefs.getGameplaySetting('practice');
 		cpuControlled = ClientPrefs.getGameplaySetting('botplay');
 		
-		if (ClientPrefs.data.smallercamera != null)
-			smallercameraInt = ClientPrefs.data.smallercamera;
+		smallercameraInt = ClientPrefs.data.smallercamera;
 
 		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
